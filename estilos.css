@@ -1,0 +1,291 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background: #5e5b5bad;
+    color: #333333;
+}
+
+body.modo-escuro {
+    background-color: #212121;
+    color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .logo,
+header .imagem-botao {
+    width: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main {
+    padding: 25px;
+}
+
+.listagem-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: flex-start;
+}
+
+main .listagem-pokemon {
+    background-color: #d8e3ec;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+header.cartao-pokemon:hover {
+    background-color: #96d9d6;
+    
+}
+
+.modo-escuro .cartao-pokemon {
+    background-color: #a8a8a8;
+}
+
+main .cartao-pokemon .informacoes span {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .cartao-pokemon .gif {
+    width: 90px;
+    height: 90px;
+}
+
+main .cartao-pokemon .tipo {
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.grama {
+    background-color: #a7d91c;
+}
+
+.veneno {
+    background-color: #df67ddfb;
+}
+
+.fogo {
+    background-color: #ee8130;
+}
+
+.agua {
+    background-color: #6390f0;
+}
+
+.inseto {
+    background-color: #a6b91a;
+}
+
+main .descricao {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #f62c2c;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+h2 {
+    font-size: 24px;
+    color: #2d2dfd;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+li {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    
+}    
+    .listagem-pokemon {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .cartao-pokemon {
+        flex: 1 0 300px;
+        margin: 10px;
+        padding: 10px;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      
+      .cartao-pokemon .informacoes {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      
+      .cartao-pokemon .informacoes span {
+        font-weight: bold;
+      }
+      
+      .cartao-pokemon .gif {
+        width: 100%;
+        height: auto;
+      }
+      
+      .cartao-pokemon .tipos {
+        display: flex;
+        padding: 0;
+        margin: 10px 0;
+      }
+      
+      .cartao-pokemon .tipos li {
+        list-style: none;
+        margin-right: 5px;
+        padding: 3px 8px;
+        border-radius: 3px;
+        color: #ffffff;
+      }
+      
+      .tipo.grama {
+        background-color: green;
+      }
+      
+      .tipo.veneno {
+        background-color: purple;
+      }
+      
+      .tipo.fogo {
+        background-color: red;
+      }
+      
+      .tipo.agua {
+        background-color: blue;
+      }
+      
+      .tipo.inseto {
+        background-color: brown;
+      }
+      
+      .cartao-pokemon .descricao {
+        font-size: 14px;
+        color: #555;
+      }
+      
+      .listagem-pokemon {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+      
+      .cartao-pokemon {
+        width: 200px; /* Ajuste o tamanho conforme necessário */
+        margin-right: 20px; /* Espaçamento entre os cartões */
+        margin-bottom: 20px; /* Espaçamento entre as linhas */
+      }
+      
+      .tipo {
+        list-style: none;
+        display: inline-block;
+        padding: 5px 3px;
+        margin-right: 8px;
+        border-radius: 3px;
+        color: #fff;
+        font-weight: bold;
+      }
+      
+      .tipo.grama {
+        background-color: green;
+      }
+      
+      .tipo.veneno {
+        background-color: purple;
+      }
+      
+      .tipo.fogo {
+        background-color: red;
+      }
+                             
+      .listagem-pokemon {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      
+      
+
+      table {
+          border-collapse: collapse;
+          width: 100%;
+      }
+      
+      td {
+          padding: 10px;
+          text-align: center;
+          border: 1px solid #fff87b;
+      }
+      
+      td a {
+          text-decoration: none;
+          color: #fff87b;
+          font-weight: bold;
+      }
+      
+      td a:hover {
+          color: black;
+      }
+
+      a{
+        color: #fff87b; 
+        text-decoration: none; 
+      }
+      
+      a:hover {
+        text-decoration: underline; 
+      }
+      
+      a:visited {
+        color: #fff87b; 
+      }
+      
